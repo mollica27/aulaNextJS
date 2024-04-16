@@ -1,16 +1,10 @@
-import BoardComponent from '../board/boardComponent'
-import styles from '../board/page.module.css'
+import styles from "./page.module.css";
+import Tabuleiro from "./tabuleiro";
 
-
-export default function Board(){
-    return (
-
-        <main className={styles.main}>
-             <BoardComponent />
-             <BoardComponent />
-             <BoardComponent />
-        </main>
-       
-
-    )
+export default function Board() {
+  return (
+    <main className={styles.main}>
+      <Tabuleiro />
+    </main>
+  );
 }

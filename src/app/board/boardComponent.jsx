@@ -1,10 +1,12 @@
-import styles from '../board/page.module.css'
+import styles from "./page.module.css";
 
 export default function Slot(props) {
-    return(
-        <div className={styles.slot}>
-
-            
-        </div>
-    )
+  return (
+    <div
+      style={{
+        backgroundColor: props.preta ? "#000" : "#fff",
+      }}
+      className={styles.slot}
+    ></div>
+  );
 }

@@ -1,14 +1,18 @@
-// import { useState } from "react"
 "use client"
+import React, { useState } from 'react';
 
-export default function contador() {
-    //  const [ cont, setCont ] = useState(0)
 
-     function mudaScore(e) {
-        console.log(e)
-     }
+const Contador = () => {
 
-    return(
-       <button onClick={e => mudaScore(e.type)}>teste</button>
-    )
-}
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Contador: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Incrementar</button>
+      <button onClick={() => setCount(count - 1)}>Decrementar</button>
+    </div>
+  );
+};
+
+export default Contador;
